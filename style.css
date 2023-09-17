@@ -34,12 +34,17 @@ section {
     flex-direction: column;
 }
 
-.input-container span {
+.input-container label {
     font-size: 10px;
     font-weight: 700;
     color: hsl(0, 1%, 44%);
     text-transform: uppercase;
     padding-bottom: 5px;
+}
+
+.invalid {
+    display: none;
+    color: hsl(0, 100%, 67%);
 }
 
 input {
@@ -48,8 +53,9 @@ input {
     background: transparent;
     box-shadow: none;
     border: 1px solid hsl(0, 0%, 86%);
-    border-radius: 3px;
+    border-radius: 5px;
     padding: 3px;
+    
 }
 
 .line {
@@ -85,8 +91,7 @@ button:hover {
 .results {
     font-size: 32px;
     font-weight: 900;
-    list-style: none;
-
+    font-style: italic;
     display: flex;
     flex-direction: column;
 }
@@ -103,4 +108,40 @@ button:hover {
     display: flex;
     flex-direction: row;
     gap: 10px;
+}
+
+
+@media (min-width: 1440px) {
+
+    section {
+        padding: 40px 50px;
+    }
+
+    .inputs {
+        padding-right: 150px;
+    }
+
+    input {
+        width: 155px;
+        font-size: 32px;
+    }
+
+    .results {
+        font-size: 75px;
+    }
+
+    .line {
+        width: 95%;
+    }
+
+    button {
+        width: 70px;
+        height: 70px;
+        left: 100%;
+    }
+
+    button img {
+        margin: 0 auto;
+    }
+
 }

@@ -15,23 +15,25 @@
   <section>
         <div class="inputs">
           <div class="input-container">
-            <span>Day</span>
-          <input type="text" id="inpDay" placeholder="DD">
-        </div>
+            <label id="label-day" for="day">Day</label>
+          <input type="text" id="inpDay" name="day" placeholder="DD">
+          <span class="invalid day">This field is required</span>
+          </div>
         
-        <div class="input-container">
-          <span>Month</span>
-          <input type="text" id="inpMonth" placeholder="MM">
-        </div>
-        
-        <div class="input-container">
-          <span>Year</span>
-          <input type="text" id="inpYear" placeholder="YYYY">
-        </div>
+          <div class="input-container">
+            <label id="label-month" for="month">Month</label>
+            <input type="text" id="inpMonth" name="month" placeholder="MM">
+            <span class="invalid month">This field is required</span>
+          </div>
+          
+          <div class="input-container">
+            <label id="label-year" for="year">Year</label>
+            <input type="text" id="inpYear" name="year" placeholder="YYYY">
+            <span class="invalid year">This field is required</span>
+          </div>
       </div>
       
       <div class="line">
-
         <button>
           <img src="/assets/images/icon-arrow.svg" alt="">
         </button>
